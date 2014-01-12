@@ -18,6 +18,11 @@
 		8FA2F49F1882279500CB260D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FA2F49E1882279500CB260D /* Default-568h@2x.png */; };
 		8FA2F4A21882279500CB260D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA2F4A01882279500CB260D /* MainStoryboard.storyboard */; };
 		8FA2F4A51882279500CB260D /* employeemanagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2F4A41882279500CB260D /* employeemanagementViewController.m */; };
+		8FA2F4B61882287000CB260D /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2F4AD1882287000CB260D /* Employee.m */; };
+		8FA2F4B71882287000CB260D /* EmployeeOffice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2F4AF1882287000CB260D /* EmployeeOffice.m */; };
+		8FA2F4B81882287000CB260D /* EmployeeSale.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2F4B11882287000CB260D /* EmployeeSale.m */; };
+		8FA2F4B91882287000CB260D /* EmployeeProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2F4B31882287000CB260D /* EmployeeProduct.m */; };
+		8FA2F4BA1882287000CB260D /* EmployeeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2F4B51882287000CB260D /* EmployeeManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,16 @@
 		8FA2F4A11882279500CB260D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		8FA2F4A31882279500CB260D /* employeemanagementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = employeemanagementViewController.h; sourceTree = "<group>"; };
 		8FA2F4A41882279500CB260D /* employeemanagementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = employeemanagementViewController.m; sourceTree = "<group>"; };
+		8FA2F4AC1882287000CB260D /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		8FA2F4AD1882287000CB260D /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		8FA2F4AE1882287000CB260D /* EmployeeOffice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeOffice.h; sourceTree = "<group>"; };
+		8FA2F4AF1882287000CB260D /* EmployeeOffice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeOffice.m; sourceTree = "<group>"; };
+		8FA2F4B01882287000CB260D /* EmployeeSale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeSale.h; sourceTree = "<group>"; };
+		8FA2F4B11882287000CB260D /* EmployeeSale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeSale.m; sourceTree = "<group>"; };
+		8FA2F4B21882287000CB260D /* EmployeeProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeProduct.h; sourceTree = "<group>"; };
+		8FA2F4B31882287000CB260D /* EmployeeProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeProduct.m; sourceTree = "<group>"; };
+		8FA2F4B41882287000CB260D /* EmployeeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeManager.h; sourceTree = "<group>"; };
+		8FA2F4B51882287000CB260D /* EmployeeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +88,7 @@
 		8FA2F4871882279500CB260D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8FA2F4AB1882283F00CB260D /* Model */,
 				8FA2F4881882279500CB260D /* UIKit.framework */,
 				8FA2F48A1882279500CB260D /* Foundation.framework */,
 				8FA2F48C1882279500CB260D /* CoreGraphics.framework */,
@@ -105,6 +121,23 @@
 				8FA2F49E1882279500CB260D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8FA2F4AB1882283F00CB260D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FA2F4AC1882287000CB260D /* Employee.h */,
+				8FA2F4AD1882287000CB260D /* Employee.m */,
+				8FA2F4AE1882287000CB260D /* EmployeeOffice.h */,
+				8FA2F4AF1882287000CB260D /* EmployeeOffice.m */,
+				8FA2F4B01882287000CB260D /* EmployeeSale.h */,
+				8FA2F4B11882287000CB260D /* EmployeeSale.m */,
+				8FA2F4B21882287000CB260D /* EmployeeProduct.h */,
+				8FA2F4B31882287000CB260D /* EmployeeProduct.m */,
+				8FA2F4B41882287000CB260D /* EmployeeManager.h */,
+				8FA2F4B51882287000CB260D /* EmployeeManager.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +210,11 @@
 				8FA2F4951882279500CB260D /* main.m in Sources */,
 				8FA2F4991882279500CB260D /* employeemanagementAppDelegate.m in Sources */,
 				8FA2F4A51882279500CB260D /* employeemanagementViewController.m in Sources */,
+				8FA2F4B61882287000CB260D /* Employee.m in Sources */,
+				8FA2F4B71882287000CB260D /* EmployeeOffice.m in Sources */,
+				8FA2F4B81882287000CB260D /* EmployeeSale.m in Sources */,
+				8FA2F4B91882287000CB260D /* EmployeeProduct.m in Sources */,
+				8FA2F4BA1882287000CB260D /* EmployeeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +293,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lession20140112/lession20140112-Prefix.pch";
 				INFOPLIST_FILE = "lession20140112/lession20140112-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -266,7 +306,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lession20140112/lession20140112-Prefix.pch";
 				INFOPLIST_FILE = "lession20140112/lession20140112-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

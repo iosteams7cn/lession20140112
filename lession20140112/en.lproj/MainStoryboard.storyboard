@@ -1,18 +1,260 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C43" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Employeemanagement View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="employeemanagementViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFI-8X-0Is">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="wXe-ED-tFZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="+ officer">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseEployee:" destination="2" eventType="touchUpInside" id="J2c-Ao-ZHm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jE-aW-CUw">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="+ productor">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseEployee:" destination="2" eventType="touchUpInside" id="B0D-m0-lC8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9I-GH-OWE">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="MDv-IB-Afe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="+ saler">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseEployee:" destination="2" eventType="touchUpInside" id="wbe-cU-lwU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEO-sd-TBO">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7r-xL-bzW">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="tel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K82-ot-xhh">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="dob" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCS-n4-5HW">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3e-Le-oGl">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="fullname of employee" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VRg-Tn-77Y">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="GI0-Qo-wIS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="oyW-d4-sfP"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hpn-9V-feJ">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="svl-Yp-Q7f"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wf8-Kn-AwZ">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="rF2-Uv-iAI"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dd/mm/yyyy" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hY1-en-86V">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="2PC-we-d1h"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name@yahoo.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TNz-tT-Seb">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="SwO-r1-qLf"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDY-zJ-bT1">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="save">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="insertEmloyee:" destination="2" eventType="touchUpInside" id="JUP-uh-0Vf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vm-th-UAN">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title=">>">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeEmployee:" destination="2" eventType="touchUpInside" id="PCo-KY-64a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kex-wP-eiy">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="&lt;&lt;">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeEmployee:" destination="2" eventType="touchUpInside" id="MD0-VO-VIf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Total employee: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdk-IE-RCo">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Salary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5D-Wq-rMA">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="work day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2A-Lx-8tv">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ola-DB-yOX">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="Evi-Ir-XZX"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gjX-YO-iJz">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="changetext:" destination="2" eventType="editingChanged" id="mZK-0T-iWg"/>
+                                    <outlet property="delegate" destination="2" id="QRa-5N-Y6p"/>
+                                </connections>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PFI-8X-0Is" firstAttribute="baseline" secondItem="1jE-aW-CUw" secondAttribute="baseline" type="default" id="119-5V-JUS"/>
+                            <constraint firstItem="Jdk-IE-RCo" firstAttribute="centerX" secondItem="1jE-aW-CUw" secondAttribute="centerX" type="default" id="1S5-8P-f6r"/>
+                            <constraint firstItem="TNz-tT-Seb" firstAttribute="top" secondItem="3" secondAttribute="top" constant="206" id="2ed-xk-A8O"/>
+                            <constraint firstItem="VRg-Tn-77Y" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="87" id="3bT-QP-2yZ"/>
+                            <constraint firstItem="SEO-sd-TBO" firstAttribute="top" secondItem="3" secondAttribute="top" constant="86" id="46d-kQ-JSG"/>
+                            <constraint firstItem="K82-ot-xhh" firstAttribute="top" secondItem="V7r-xL-bzW" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Cxc-rp-0OX"/>
+                            <constraint firstItem="C3e-Le-oGl" firstAttribute="trailing" secondItem="y5D-Wq-rMA" secondAttribute="trailing" type="default" id="Ejf-up-UaA"/>
+                            <constraint firstItem="V7r-xL-bzW" firstAttribute="trailing" secondItem="SEO-sd-TBO" secondAttribute="trailing" type="default" id="Eu4-Cs-yCY"/>
+                            <constraint firstItem="gDY-zJ-bT1" firstAttribute="baseline" secondItem="kex-wP-eiy" secondAttribute="baseline" type="default" id="I6H-0q-qjd"/>
+                            <constraint firstItem="ola-DB-yOX" firstAttribute="leading" secondItem="TNz-tT-Seb" secondAttribute="leading" type="default" id="JUL-2j-Rlc"/>
+                            <constraint firstItem="BCS-n4-5HW" firstAttribute="top" secondItem="K82-ot-xhh" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="JUd-Fp-nSW"/>
+                            <constraint firstItem="O2A-Lx-8tv" firstAttribute="trailing" secondItem="kex-wP-eiy" secondAttribute="trailing" type="default" id="JdI-tc-8M4"/>
+                            <constraint firstAttribute="bottom" secondItem="kex-wP-eiy" secondAttribute="bottom" constant="82" id="Jtv-ph-uta"/>
+                            <constraint firstItem="VRg-Tn-77Y" firstAttribute="trailing" secondItem="hpn-9V-feJ" secondAttribute="trailing" type="default" id="KNW-5a-WDa"/>
+                            <constraint firstItem="hY1-en-86V" firstAttribute="leading" secondItem="wf8-Kn-AwZ" secondAttribute="leading" type="default" id="L59-eF-6Eh"/>
+                            <constraint firstItem="hY1-en-86V" firstAttribute="trailing" secondItem="TNz-tT-Seb" secondAttribute="trailing" type="default" id="LB9-UO-dC9"/>
+                            <constraint firstItem="gDY-zJ-bT1" firstAttribute="trailing" secondItem="1jE-aW-CUw" secondAttribute="trailing" type="default" id="MjN-ia-uj3"/>
+                            <constraint firstItem="VRg-Tn-77Y" firstAttribute="top" secondItem="3" secondAttribute="top" constant="78" id="NSv-63-eh2"/>
+                            <constraint firstAttribute="bottom" secondItem="Jdk-IE-RCo" secondAttribute="bottom" constant="45" id="OsI-2D-e1D"/>
+                            <constraint firstAttribute="bottom" secondItem="y5D-Wq-rMA" secondAttribute="bottom" constant="192" id="P2r-WD-vcz"/>
+                            <constraint firstItem="gjX-YO-iJz" firstAttribute="trailing" secondItem="ola-DB-yOX" secondAttribute="trailing" type="default" id="Pcx-bO-yo0"/>
+                            <constraint firstItem="hpn-9V-feJ" firstAttribute="trailing" secondItem="wf8-Kn-AwZ" secondAttribute="trailing" type="default" id="Puh-Nb-htC"/>
+                            <constraint firstItem="hpn-9V-feJ" firstAttribute="leading" secondItem="VRg-Tn-77Y" secondAttribute="leading" type="default" id="QIk-oc-fUs"/>
+                            <constraint firstItem="a9I-GH-OWE" firstAttribute="trailing" secondItem="VRg-Tn-77Y" secondAttribute="trailing" type="default" id="RFr-W5-dxU"/>
+                            <constraint firstItem="hpn-9V-feJ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="107" id="Suq-ac-AYq"/>
+                            <constraint firstItem="hY1-en-86V" firstAttribute="top" secondItem="BCS-n4-5HW" secondAttribute="top" type="default" id="UOB-M7-RQs"/>
+                            <constraint firstItem="ola-DB-yOX" firstAttribute="bottom" secondItem="y5D-Wq-rMA" secondAttribute="bottom" type="default" id="Uux-8q-k4a"/>
+                            <constraint firstAttribute="bottom" secondItem="O2A-Lx-8tv" secondAttribute="bottom" constant="157" id="Xvq-jt-xrb"/>
+                            <constraint firstItem="BCS-n4-5HW" firstAttribute="trailing" secondItem="K82-ot-xhh" secondAttribute="trailing" type="default" id="YL5-qh-ZOY"/>
+                            <constraint firstItem="wf8-Kn-AwZ" firstAttribute="trailing" secondItem="hY1-en-86V" secondAttribute="trailing" type="default" id="ZhB-1r-juZ"/>
+                            <constraint firstItem="V7r-xL-bzW" firstAttribute="top" secondItem="SEO-sd-TBO" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="aBN-9B-oZ7"/>
+                            <constraint firstItem="ola-DB-yOX" firstAttribute="trailing" secondItem="TNz-tT-Seb" secondAttribute="trailing" type="default" id="abI-dd-7m2"/>
+                            <constraint firstItem="9Vm-th-UAN" firstAttribute="baseline" secondItem="gDY-zJ-bT1" secondAttribute="baseline" type="default" id="bEH-pm-e34"/>
+                            <constraint firstItem="C3e-Le-oGl" firstAttribute="top" secondItem="3" secondAttribute="top" constant="210" id="cZ8-47-VHQ"/>
+                            <constraint firstItem="K82-ot-xhh" firstAttribute="baseline" secondItem="wf8-Kn-AwZ" secondAttribute="baseline" type="default" id="csc-xT-4TT"/>
+                            <constraint firstItem="a9I-GH-OWE" firstAttribute="leading" secondItem="1jE-aW-CUw" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="fa4-92-tLn"/>
+                            <constraint firstItem="TNz-tT-Seb" firstAttribute="leading" secondItem="hY1-en-86V" secondAttribute="leading" type="default" id="hjy-4q-N5p"/>
+                            <constraint firstItem="9Vm-th-UAN" firstAttribute="trailing" secondItem="gjX-YO-iJz" secondAttribute="trailing" type="default" id="idP-wA-rae"/>
+                            <constraint firstItem="gjX-YO-iJz" firstAttribute="bottom" secondItem="O2A-Lx-8tv" secondAttribute="bottom" type="default" id="jeQ-LI-Eb9"/>
+                            <constraint firstItem="PFI-8X-0Is" firstAttribute="top" secondItem="3" secondAttribute="top" constant="25" id="mm1-9T-eAp"/>
+                            <constraint firstItem="kex-wP-eiy" firstAttribute="leading" secondItem="C3e-Le-oGl" secondAttribute="leading" type="default" id="nXt-5O-o5G"/>
+                            <constraint firstItem="1jE-aW-CUw" firstAttribute="baseline" secondItem="a9I-GH-OWE" secondAttribute="baseline" type="default" id="r47-vl-gpR"/>
+                            <constraint firstItem="1jE-aW-CUw" firstAttribute="leading" secondItem="PFI-8X-0Is" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="sjz-xc-8ys"/>
+                            <constraint firstItem="C3e-Le-oGl" firstAttribute="trailing" secondItem="BCS-n4-5HW" secondAttribute="trailing" type="default" id="utb-C5-SMb"/>
+                            <constraint firstItem="PFI-8X-0Is" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="vH1-tP-j8t"/>
+                            <constraint firstItem="gjX-YO-iJz" firstAttribute="leading" secondItem="ola-DB-yOX" secondAttribute="leading" type="default" id="vKE-Cr-STj"/>
+                            <constraint firstItem="O2A-Lx-8tv" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="3" id="vyz-jo-xtX"/>
+                            <constraint firstItem="V7r-xL-bzW" firstAttribute="trailing" secondItem="K82-ot-xhh" secondAttribute="trailing" type="default" id="wmu-Gm-rrO"/>
+                            <constraint firstItem="wf8-Kn-AwZ" firstAttribute="leading" secondItem="hpn-9V-feJ" secondAttribute="leading" type="default" id="yLI-5v-9V5"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="lbtypeE" destination="O2A-Lx-8tv" id="SZG-qq-zpd"/>
+                        <outlet property="totalE" destination="Jdk-IE-RCo" id="RRp-8u-Cfj"/>
+                        <outlet property="txtaddress" destination="hpn-9V-feJ" id="j29-I5-znc"/>
+                        <outlet property="txtdob" destination="hY1-en-86V" id="BbD-EZ-C1a"/>
+                        <outlet property="txtemail" destination="TNz-tT-Seb" id="LK7-jo-nZp"/>
+                        <outlet property="txtname" destination="VRg-Tn-77Y" id="61I-ZW-Gpj"/>
+                        <outlet property="txtparameter" destination="gjX-YO-iJz" id="uNs-zJ-gCn"/>
+                        <outlet property="txtsalary" destination="ola-DB-yOX" id="3MG-2Y-pim"/>
+                        <outlet property="txttel" destination="wf8-Kn-AwZ" id="1l2-TF-htc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -21,6 +263,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
